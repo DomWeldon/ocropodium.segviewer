@@ -9,4 +9,6 @@ syntax: regexp
 ^debug
 ^moc_.+
 ^segviewer
+^Makefile.*
+^ui_.+
 
