@@ -44,7 +44,7 @@ class SegViewer : public QMainWindow {
 public:
     SegViewer(QWidget *parent = 0);
     ~SegViewer();
-
+    void setImagePath(const QString& filename);
 
 
 protected:

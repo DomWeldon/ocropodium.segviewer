@@ -183,7 +183,11 @@ void SegViewer::on_actionOpen_triggered()
 {
     QString filename = QFileDialog::getOpenFileName(this,
                                          tr("Open File"), QDir::currentPath());
+    setImagePath(filename);
+}
 
+
+void SegViewer::setImagePath(const QString& filename) {
     m_imagepath = filename;
     if (!filename.isEmpty()) {
         QImage image(filename);
